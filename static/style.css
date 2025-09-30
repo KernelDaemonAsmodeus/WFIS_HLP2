@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#items {
+    display: flex;
+    gap: 10px;
+    will-change: transform;
+    align-items: center;
+    padding: 10px;
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px; /* gwarantuje identyczny rozmiar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightblue;
+    border: 2px solid #333;
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.item.highlight {
+    background: gold;
+    border-color: darkorange;
+    transform: scale(1.05);
+    transition: background 0.2s, transform 0.2s;
+}
+
+#roulette {
+    width: 400px; /* możesz zmienić */
+    height: 80px;
+    margin: 20px auto;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+#marker {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+#message {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ranking-section {
+    margin-top: 30px;
+}
+
+#ranking {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+#ranking th, #ranking td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+#ranking th {
+    background: #444;
+    color: white;
+}
+
+#ranking tr:nth-child(even) {
+    background: #f2f2f2;
+}
