@@ -1,3 +1,5 @@
+Projekt Webowy przy użyciu Flask (Ruletka)
+
 Projekt można uruchomić lokalnie poprzez:
   1. uruchomienie pliku:
      app.py
